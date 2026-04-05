@@ -1,0 +1,1137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Marvel Media Company | Professional Photography</title>
+<meta name="description" content="Marvel Media Company — professional photography capturing your most precious moments with artistry and passion."/>
+<meta name="keywords" content="photography, professional photographer, portrait, wedding, commercial, Marvel Media Company"/>
+<meta name="author" content="Marvel Media Company"/>
+<meta property="og:title" content="Marvel Media Company | Professional Photography"/>
+<meta property="og:description" content="Capturing your most precious moments with artistry and passion."/>
+<meta property="og:type" content="website"/>
+<meta property="og:image" content="https://images.unsplash.com/photo-1452587925148-ce544e77e70d?w=1200"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Lora:ital,wght@0,400;0,600;1,400&family=Bebas+Neue&display=swap" rel="stylesheet"/>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script>emailjs.init('v3LLBB2OBvqo2YK8N');</script>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{overflow-x:hidden;transition:background .4s,color .4s}
+
+/* ── THEME VARIABLES ── */
+body.theme-noir{
+  --bg:#0a0a0f;--bg2:#12121a;--bg3:#1a1a28;--card:#16161f;
+  --border:#2a2a3a;--text:#e8eaf0;--muted:#6b7280;--light-muted:#4a5060;
+  --accent:#4f8ef7;--accent2:#7aadff;--accent-pale:#0d1f3c;
+  --nav-bg:rgba(10,10,15,.92);--shadow:0 4px 32px rgba(0,0,0,.4);
+  --display-font:'Bebas Neue',sans-serif;--body-font:'DM Sans',sans-serif;
+  --hero-overlay:linear-gradient(to bottom,rgba(10,10,15,.5),rgba(10,10,15,.85));
+}
+body.theme-sage{
+  --bg:#f4f1eb;--bg2:#ffffff;--bg3:#eae6dd;--card:#ffffff;
+  --border:#d8d0c4;--text:#1e2d24;--muted:#6b7a6e;--light-muted:#a8b5a2;
+  --accent:#3d6b4f;--accent2:#5a9470;--accent-pale:#e0ede4;
+  --nav-bg:rgba(255,255,255,.94);--shadow:0 2px 24px rgba(30,45,36,.08);
+  --display-font:'Lora',serif;--body-font:'DM Sans',sans-serif;
+  --hero-overlay:linear-gradient(to bottom,rgba(244,241,235,.2),rgba(244,241,235,.78));
+}
+body.theme-blush{
+  --bg:#fdf6f8;--bg2:#ffffff;--bg3:#faeef2;--card:#ffffff;
+  --border:#eed8e0;--text:#2d1f23;--muted:#9c7080;--light-muted:#c8a8b4;
+  --accent:#c2607a;--accent2:#d4809a;--accent-pale:#fde8ee;
+  --nav-bg:rgba(253,246,248,.94);--shadow:0 2px 24px rgba(45,31,35,.07);
+  --display-font:'Cormorant Garamond',serif;--body-font:'DM Sans',sans-serif;
+  --hero-overlay:linear-gradient(to bottom,rgba(253,246,248,.15),rgba(253,246,248,.78));
+}
+body.theme-gold{
+  --bg:#111008;--bg2:#1a1810;--bg3:#201e12;--card:#181610;
+  --border:#2e2a18;--text:#f5f0e8;--muted:#8a7d60;--light-muted:#5a5040;
+  --accent:#c9a84c;--accent2:#e2c97e;--accent-pale:#2a2410;
+  --nav-bg:rgba(17,16,8,.92);--shadow:0 4px 32px rgba(0,0,0,.5);
+  --display-font:'Playfair Display',serif;--body-font:'DM Sans',sans-serif;
+  --hero-overlay:linear-gradient(to bottom,rgba(17,16,8,.4),rgba(17,16,8,.82));
+}
+body.theme-arctic{
+  --bg:#f8f9fb;--bg2:#ffffff;--bg3:#eef2f7;--card:#ffffff;
+  --border:#dde3ee;--text:#0f172a;--muted:#64748b;--light-muted:#94a3b8;
+  --accent:#2563eb;--accent2:#3b82f6;--accent-pale:#eff6ff;
+  --nav-bg:rgba(248,249,251,.94);--shadow:0 2px 24px rgba(15,23,42,.07);
+  --display-font:'DM Sans',sans-serif;--body-font:'DM Sans',sans-serif;
+  --hero-overlay:linear-gradient(to bottom,rgba(248,249,251,.1),rgba(248,249,251,.78));
+}
+
+/* ── PRELOADER ── */
+#preloader{position:fixed;inset:0;background:var(--bg);display:flex;align-items:center;justify-content:center;z-index:9999;transition:opacity .7s,visibility .7s}
+#preloader.hidden{opacity:0;visibility:hidden;pointer-events:none}
+.loader-ring{width:48px;height:48px;border:2px solid var(--border);border-top-color:var(--accent);border-radius:50%;animation:spin .9s linear infinite;margin:0 auto 16px}
+.loader-text{font-family:var(--display-font);font-size:13px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);text-align:center}
+@keyframes spin{to{transform:rotate(360deg)}}
+
+/* ── NAVBAR ── */
+nav{position:fixed;top:0;left:0;right:0;height:68px;display:flex;align-items:center;justify-content:space-between;padding:0 48px;background:var(--nav-bg);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-bottom:1px solid var(--border);z-index:900;transition:background .3s,border-color .3s}
+.nav-logo{font-family:var(--display-font);font-size:22px;color:var(--text);text-decoration:none;letter-spacing:.04em;transition:color .3s}
+.nav-logo span{color:var(--accent)}
+.nav-links{display:flex;align-items:center;gap:28px;list-style:none}
+.nav-links a{color:var(--muted);text-decoration:none;font-family:var(--body-font);font-size:12px;font-weight:500;letter-spacing:.12em;text-transform:uppercase;transition:color .2s;position:relative}
+.nav-links a::after{content:'';position:absolute;left:0;bottom:-3px;width:0;height:1px;background:var(--accent);transition:width .3s}
+.nav-links a:hover{color:var(--text)}
+.nav-links a:hover::after{width:100%}
+.admin-btn{color:var(--accent) !important;border:1px solid var(--accent);padding:6px 16px;border-radius:2px;transition:background .2s,color .2s !important;display:none !important}
+.admin-btn:hover{background:var(--accent) !important;color:var(--bg) !important}
+.admin-btn::after{display:none !important}
+body.admin-mode .admin-btn{display:inline-block !important}
+#admin-open-mob{display:none !important}
+body.admin-mode #admin-open-mob{display:block !important}
+.hamburger{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:4px}
+.hamburger span{display:block;width:22px;height:1.5px;background:var(--text);transition:transform .3s,opacity .3s}
+.hamburger.open span:nth-child(1){transform:translateY(6.5px) rotate(45deg)}
+.hamburger.open span:nth-child(2){opacity:0}
+.hamburger.open span:nth-child(3){transform:translateY(-6.5px) rotate(-45deg)}
+.mobile-menu{display:none;position:fixed;top:68px;left:0;right:0;background:var(--nav-bg);backdrop-filter:blur(20px);padding:24px 48px;border-bottom:1px solid var(--border);z-index:899;flex-direction:column}
+.mobile-menu.open{display:flex}
+.mobile-menu a{color:var(--muted);text-decoration:none;font-size:14px;font-weight:500;letter-spacing:.1em;text-transform:uppercase;padding:13px 0;border-bottom:1px solid var(--border);transition:color .2s;font-family:var(--body-font)}
+.mobile-menu a:last-child{border:none}
+.mobile-menu a:hover{color:var(--accent)}
+
+/* ── THEME SWITCHER (hidden – use Admin Panel > Themes) ── */
+.theme-switcher{display:none !important}
+.ts-btn{width:28px;height:28px;border-radius:50%;border:2px solid transparent;cursor:pointer;transition:transform .2s,border-color .2s;position:relative;flex-shrink:0}
+.ts-btn:hover{transform:scale(1.2)}
+.ts-btn.active{border-color:var(--text);transform:scale(1.1)}
+.ts-tooltip{position:absolute;left:38px;top:50%;transform:translateY(-50%);background:var(--bg2);border:1px solid var(--border);color:var(--text);font-size:11px;font-weight:500;letter-spacing:.06em;white-space:nowrap;padding:5px 10px;border-radius:4px;opacity:0;pointer-events:none;transition:opacity .2s;font-family:var(--body-font);z-index:10}
+.ts-btn:hover .ts-tooltip{opacity:1}
+/* ── BRAND NAME hidden from public; shown in admin mode ── */
+.brand-name{display:none}
+body.admin-mode .brand-name{display:inline}
+.ts-btn{width:28px;height:28px;border-radius:50%;border:2px solid transparent;cursor:pointer;transition:transform .2s,border-color .2s;position:relative;flex-shrink:0}
+.ts-btn:hover{transform:scale(1.2)}
+.ts-btn.active{border-color:var(--text);transform:scale(1.1)}
+.ts-tooltip{position:absolute;left:38px;top:50%;transform:translateY(-50%);background:var(--bg2);border:1px solid var(--border);color:var(--text);font-size:11px;font-weight:500;letter-spacing:.06em;white-space:nowrap;padding:5px 10px;border-radius:4px;opacity:0;pointer-events:none;transition:opacity .2s;font-family:var(--body-font);z-index:10}
+.ts-btn:hover .ts-tooltip{opacity:1}
+
+/* ── SECTIONS ── */
+section{padding:100px 48px;background:var(--bg);transition:background .4s}
+section.alt{background:var(--bg2)}
+section.alt2{background:var(--bg3)}
+.container{max-width:1300px;margin:0 auto}
+.fade-in{opacity:0;transform:translateY(28px);transition:opacity .7s,transform .7s}
+.fade-in.visible{opacity:1;transform:none}
+.section-label{font-size:10px;letter-spacing:.28em;text-transform:uppercase;color:var(--accent);margin-bottom:14px;display:block;font-weight:500;font-family:var(--body-font)}
+.section-title{font-family:var(--display-font);font-size:clamp(30px,4vw,52px);font-weight:400;line-height:1.12;margin-bottom:20px;color:var(--text)}
+.section-sub{color:var(--muted);font-size:15px;line-height:1.8;max-width:580px;font-family:var(--body-font)}
+.btn{display:inline-block;padding:13px 30px;font-size:11px;font-weight:500;letter-spacing:.14em;text-transform:uppercase;text-decoration:none;border-radius:2px;cursor:pointer;transition:all .25s;font-family:var(--body-font)}
+.btn:hover{transform:translateY(-2px)}
+.btn-accent{background:var(--accent);color:var(--bg);border:1px solid var(--accent)}
+.btn-accent:hover{background:var(--accent2);border-color:var(--accent2)}
+.btn-outline{background:transparent;color:var(--text);border:1px solid var(--border)}
+.btn-outline:hover{border-color:var(--text)}
+
+/* ── HERO ── */
+#home{min-height:100vh;padding:0;position:relative;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.hero-bg{position:absolute;inset:0;background-size:cover;background-position:center;transition:background-image .6s}
+.hero-ov{position:absolute;inset:0;background:var(--hero-overlay)}
+.hero-content{position:relative;z-index:1;text-align:center;padding:40px 24px;max-width:920px}
+.hero-eyebrow{font-size:10px;letter-spacing:.3em;text-transform:uppercase;color:var(--accent);margin-bottom:26px;animation:fadeUp .9s .2s both;font-weight:500;font-family:var(--body-font)}
+.hero-title{font-family:var(--display-font);font-size:clamp(44px,8vw,104px);font-weight:400;line-height:1.02;margin-bottom:28px;color:var(--text);animation:fadeUp .9s .4s both}
+.hero-title em{font-style:italic;color:var(--accent)}
+.hero-sub{font-size:clamp(14px,1.8vw,17px);color:var(--muted);max-width:480px;margin:0 auto 44px;line-height:1.78;animation:fadeUp .9s .6s both;font-family:var(--body-font)}
+.hero-cta{display:inline-flex;gap:14px;flex-wrap:wrap;justify-content:center;animation:fadeUp .9s .8s both}
+.hero-scroll{position:absolute;bottom:36px;left:50%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:10px;color:var(--muted);font-size:10px;letter-spacing:.18em;text-transform:uppercase;animation:fadeUp .9s 1.1s both;font-family:var(--body-font)}
+.scroll-line{width:1px;height:42px;background:linear-gradient(to bottom,var(--accent),transparent);animation:pulse 2s ease-in-out infinite}
+@keyframes pulse{0%,100%{opacity:.4}50%{opacity:1}}
+@keyframes fadeUp{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:none}}
+
+/* ── ABOUT ── */
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:88px;align-items:center}
+.about-img-wrap{position:relative}
+.about-img-wrap img{width:100%;height:520px;object-fit:cover;border-radius:3px;display:block}
+.img-frame{position:absolute;top:-14px;left:-14px;width:58%;height:55%;border:1px solid var(--accent);border-radius:3px;pointer-events:none;opacity:.5}
+.about-stats{display:flex;gap:44px;margin-top:44px}
+.stat-num{font-family:var(--display-font);font-size:44px;color:var(--accent);display:block;line-height:1}
+.stat-lbl{font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-top:6px;display:block;font-family:var(--body-font)}
+
+/* ── TEAM ── */
+.team-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:20px;margin-top:52px}
+.team-card{background:var(--card);border:1px solid var(--border);border-radius:4px;overflow:hidden;transition:box-shadow .3s,transform .3s}
+.team-card:hover{box-shadow:var(--shadow);transform:translateY(-4px)}
+.team-card img{width:100%;height:280px;object-fit:cover;display:block}
+.team-card-body{padding:20px}
+.team-card h3{font-family:var(--display-font);font-size:20px;font-weight:400;margin-bottom:4px;color:var(--text)}
+.team-card .role{font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin-bottom:10px;display:block;font-family:var(--body-font)}
+.team-card p{font-size:13px;color:var(--muted);line-height:1.65;font-family:var(--body-font)}
+
+/* ── GALLERY ── */
+.gallery-hdr{display:flex;align-items:flex-end;justify-content:space-between;margin-bottom:44px;gap:20px;flex-wrap:wrap}
+.gallery-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:10px}
+.gallery-item{position:relative;overflow:hidden;border-radius:3px;aspect-ratio:4/3;cursor:pointer}
+.gallery-item img{width:100%;height:100%;object-fit:cover;transition:transform .5s;display:block}
+.gallery-item:hover img{transform:scale(1.06)}
+.gallery-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.6) 0%,transparent 60%);opacity:0;transition:opacity .3s;display:flex;align-items:flex-end;padding:14px}
+.gallery-item:hover .gallery-overlay{opacity:1}
+.gallery-overlay span{font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:#fff;font-family:var(--body-font)}
+
+/* ── SERVICES ── */
+.services-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px;margin-top:52px}
+.service-card{background:var(--card);border:1px solid var(--border);border-radius:4px;padding:36px 28px;transition:border-color .3s,transform .3s,box-shadow .3s}
+.service-card:hover{border-color:var(--accent);transform:translateY(-4px);box-shadow:var(--shadow)}
+.svc-icon{font-size:26px;margin-bottom:20px;display:block}
+.service-card h3{font-family:var(--display-font);font-size:22px;font-weight:400;margin-bottom:10px;color:var(--text)}
+.service-card .desc{font-size:14px;color:var(--muted);line-height:1.7;margin-bottom:20px;font-family:var(--body-font)}
+.service-card .price{font-family:var(--display-font);font-size:26px;color:var(--accent)}
+.service-card .price span{font-family:var(--body-font);font-size:12px;color:var(--muted)}
+
+/* ── TESTIMONIALS ── */
+.test-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px;margin-top:52px}
+.test-card{background:var(--card);border:1px solid var(--border);border-radius:4px;padding:32px 28px;transition:box-shadow .3s}
+.test-card:hover{box-shadow:var(--shadow)}
+.stars{color:var(--accent);font-size:13px;margin-bottom:16px;letter-spacing:3px}
+.test-card blockquote{font-family:var(--display-font);font-size:18px;font-weight:300;font-style:italic;line-height:1.6;color:var(--text);margin-bottom:20px}
+.test-author{display:flex;align-items:center;gap:12px}
+.avatar-img{width:40px;height:40px;border-radius:50%;object-fit:cover;border:1px solid var(--border)}
+.avatar-ph{width:40px;height:40px;border-radius:50%;background:var(--accent-pale);border:1px solid var(--accent);display:flex;align-items:center;justify-content:center;font-family:var(--display-font);font-size:16px;color:var(--accent)}
+.author-info strong{display:block;font-size:13px;font-weight:500;color:var(--text);font-family:var(--body-font)}
+.author-info span{font-size:12px;color:var(--muted);font-family:var(--body-font)}
+
+/* ── CONTACT ── */
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:88px;align-items:start}
+.contact-detail{display:flex;align-items:flex-start;gap:16px;margin-bottom:26px}
+.c-icon{width:36px;height:36px;flex-shrink:0;border:1px solid var(--border);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:14px;margin-top:2px;background:var(--card)}
+.contact-detail h4{font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin-bottom:4px;font-family:var(--body-font)}
+.contact-detail p,.contact-detail a{font-size:14px;color:var(--muted);line-height:1.6;text-decoration:none;transition:color .2s;font-family:var(--body-font)}
+.contact-detail a:hover{color:var(--accent)}
+.contact-form{display:flex;flex-direction:column;gap:16px}
+.form-group{display:flex;flex-direction:column;gap:7px}
+.form-group label{font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);font-weight:500;font-family:var(--body-font)}
+.form-group input,.form-group textarea{background:var(--card);border:1px solid var(--border);border-radius:3px;padding:13px 15px;color:var(--text);font-family:var(--body-font);font-size:14px;transition:border-color .25s;outline:none;resize:vertical}
+.form-group input:focus,.form-group textarea:focus{border-color:var(--accent)}
+.form-group input::placeholder,.form-group textarea::placeholder{color:var(--light-muted)}
+.form-success{display:none;background:var(--accent-pale);border:1px solid var(--accent);border-radius:3px;padding:13px 16px;font-size:13px;color:var(--accent);font-family:var(--body-font)}
+
+/* ── FOOTER ── */
+footer{background:var(--bg2);border-top:1px solid var(--border);padding:40px 48px;text-align:center;transition:background .4s}
+footer p{font-size:13px;color:var(--muted);font-family:var(--body-font)}
+footer a{color:var(--accent);text-decoration:none}
+
+/* ── WHATSAPP ── */
+.wa-btn{position:fixed;bottom:28px;right:28px;width:52px;height:52px;background:#25d366;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 18px rgba(37,211,102,.3);z-index:800;text-decoration:none;transition:transform .25s,box-shadow .25s}
+.wa-btn:hover{transform:scale(1.1);box-shadow:0 6px 26px rgba(37,211,102,.45)}
+.wa-btn svg{width:24px;height:24px;fill:#fff}
+
+/* ════════════════════════════════
+   ADMIN PANEL
+════════════════════════════════ */
+.admin-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.6);backdrop-filter:blur(6px);z-index:2000;align-items:stretch;justify-content:flex-end}
+.admin-overlay.open{display:flex}
+.admin-panel{width:100%;max-width:840px;height:100vh;background:var(--bg2);display:flex;flex-direction:column;overflow:hidden;box-shadow:-4px 0 40px rgba(0,0,0,.2);transition:background .4s}
+.admin-header{padding:20px 32px;border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;flex-shrink:0}
+.admin-header h2{font-family:var(--display-font);font-size:22px;font-weight:400;color:var(--text)}
+.admin-header p{font-size:12px;color:var(--muted);margin-top:3px;font-family:var(--body-font)}
+.admin-close-x{background:none;border:none;font-size:24px;cursor:pointer;color:var(--muted);line-height:1;transition:color .2s}
+.admin-close-x:hover{color:var(--text)}
+.admin-body{display:flex;flex:1;overflow:hidden}
+.admin-sidebar{width:190px;border-right:1px solid var(--border);padding:12px 0;flex-shrink:0;overflow-y:auto;background:var(--bg);transition:background .4s}
+.admin-tab{display:block;width:100%;text-align:left;background:none;border:none;padding:11px 22px;font-family:var(--body-font);font-size:11px;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);cursor:pointer;transition:background .2s,color .2s;border-left:2px solid transparent}
+.admin-tab:hover{background:var(--bg2);color:var(--text)}
+.admin-tab.active{background:var(--bg2);color:var(--accent);border-left-color:var(--accent)}
+.admin-content{flex:1;overflow-y:auto;padding:28px 32px;background:var(--bg2);transition:background .4s}
+.tab-pane{display:none}
+.tab-pane.active{display:block}
+#admin-login{display:flex;align-items:center;justify-content:center;flex:1;padding:40px}
+.login-box{text-align:center;max-width:340px;width:100%}
+.login-box h3{font-family:var(--display-font);font-size:28px;font-weight:400;margin-bottom:8px;color:var(--text)}
+.login-box p{font-size:13px;color:var(--muted);margin-bottom:28px;font-family:var(--body-font)}
+.login-box input{width:100%;background:var(--bg);border:1px solid var(--border);border-radius:3px;padding:13px 15px;font-family:var(--body-font);font-size:14px;outline:none;transition:border-color .25s;margin-bottom:12px;color:var(--text)}
+.login-box input:focus{border-color:var(--accent)}
+.login-box input::placeholder{color:var(--light-muted)}
+.login-error{font-size:12px;color:#e05555;margin-bottom:10px;display:none;font-family:var(--body-font)}
+.a-title{font-family:var(--display-font);font-size:22px;font-weight:400;margin-bottom:6px;color:var(--text)}
+.a-sub{font-size:13px;color:var(--muted);margin-bottom:22px;line-height:1.6;font-family:var(--body-font)}
+.a-form-row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.a-fg{display:flex;flex-direction:column;gap:7px;margin-bottom:14px}
+.a-fg label{font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);font-weight:500;font-family:var(--body-font)}
+.a-fg input,.a-fg textarea,.a-fg select{background:var(--bg);border:1px solid var(--border);border-radius:3px;padding:11px 13px;font-family:var(--body-font);font-size:13px;color:var(--text);outline:none;transition:border-color .25s;width:100%}
+.a-fg input:focus,.a-fg textarea:focus{border-color:var(--accent)}
+.a-fg textarea{resize:vertical;min-height:80px}
+.a-fg input::placeholder,.a-fg textarea::placeholder{color:var(--light-muted)}
+.a-add-btn{background:var(--accent);color:var(--bg);border:none;padding:10px 22px;border-radius:2px;font-family:var(--body-font);font-size:11px;font-weight:500;letter-spacing:.12em;text-transform:uppercase;cursor:pointer;transition:background .2s;display:inline-flex;align-items:center;gap:8px}
+.a-add-btn:hover{background:var(--accent2)}
+.a-add-btn.danger{background:#c44;color:#fff}
+.a-add-btn.danger:hover{background:#e55}
+.a-del-btn{background:none;border:1px solid var(--border);color:var(--muted);padding:5px 10px;border-radius:2px;font-family:var(--body-font);font-size:11px;cursor:pointer;transition:all .2s}
+.a-del-btn:hover{border-color:#d44;color:#d44}
+.a-ok{display:none;font-size:12px;color:var(--accent);margin-top:8px;padding:8px 12px;background:var(--accent-pale);border-radius:3px;border:1px solid var(--accent);font-family:var(--body-font)}
+.a-divider{border:none;border-top:1px solid var(--border);margin:22px 0}
+.a-list{display:flex;flex-direction:column;gap:10px;margin-top:18px}
+.a-item{background:var(--bg);border:1px solid var(--border);border-radius:4px;padding:13px 16px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.a-item-info{flex:1;min-width:0}
+.a-item-info strong{display:block;font-size:13px;font-weight:500;color:var(--text);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-family:var(--body-font)}
+.a-item-info span{font-size:11px;color:var(--muted);font-family:var(--body-font)}
+.a-item img{width:56px;height:40px;object-fit:cover;border-radius:2px;flex-shrink:0}
+.a-card{background:var(--bg);border:1px solid var(--border);border-radius:4px;padding:20px;margin-bottom:16px}
+.a-card h4{font-size:10px;font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:12px;font-family:var(--body-font)}
+.prev-img{width:100%;height:130px;object-fit:cover;border-radius:3px;margin-top:10px;display:none}
+.stat-row{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:18px}
+.s-card{background:var(--bg);border:1px solid var(--border);border-radius:4px;padding:16px;text-align:center}
+.s-card .num{font-family:var(--display-font);font-size:28px;color:var(--accent)}
+.s-card .lbl{font-size:10px;color:var(--muted);letter-spacing:.1em;text-transform:uppercase;margin-top:4px;font-family:var(--body-font)}
+.color-row{display:flex;gap:8px;align-items:center}
+.color-row input[type=color]{width:36px;height:36px;border:1px solid var(--border);border-radius:3px;cursor:pointer;padding:2px;background:var(--bg)}
+/* Theme admin grid */
+.theme-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:16px}
+.theme-opt{border:2px solid var(--border);border-radius:8px;overflow:hidden;cursor:pointer;transition:border-color .2s,transform .2s}
+.theme-opt:hover{transform:translateY(-2px)}
+.theme-opt.active-theme{border-color:var(--accent)}
+.theme-opt-preview{height:64px;display:flex;align-items:center;justify-content:center;gap:10px}
+.theme-dot{width:12px;height:12px;border-radius:50%;flex-shrink:0}
+.theme-opt-name{font-size:12px;font-weight:500;letter-spacing:.04em}
+.theme-opt-label{padding:8px 14px;font-size:10px;font-family:var(--body-font);color:var(--muted);letter-spacing:.1em;text-transform:uppercase;background:var(--bg2)}
+
+/* ── RESPONSIVE ── */
+@media(max-width:960px){
+  nav{padding:0 24px}
+  .nav-links{display:none}
+  .hamburger{display:flex}
+  section{padding:80px 24px}
+  .about-grid,.contact-grid{grid-template-columns:1fr;gap:48px}
+  .about-img-wrap img{height:320px}
+  .about-stats{justify-content:center}
+  .admin-panel{max-width:100%}
+  .theme-switcher{display:none}
+  footer{padding:32px 24px}
+}
+@media(max-width:620px){
+  section{padding:64px 18px}
+  .gallery-grid{grid-template-columns:1fr}
+  .services-grid,.team-grid{grid-template-columns:1fr}
+  .about-stats{flex-wrap:wrap;gap:24px}
+  .a-form-row{grid-template-columns:1fr}
+  .admin-body{flex-direction:column}
+  .admin-sidebar{width:100%;border-right:none;border-bottom:1px solid var(--border);display:flex;flex-wrap:wrap;padding:8px}
+  .admin-tab{flex:1;padding:10px 8px;font-size:9px;text-align:center;border-left:none;border-bottom:2px solid transparent}
+  .admin-tab.active{border-bottom-color:var(--accent);border-left:none}
+  .stat-row{grid-template-columns:1fr 1fr}
+  .theme-grid{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body class="theme-gold">
+
+<!-- Preloader -->
+<div id="preloader">
+  <div>
+    <div class="loader-ring"></div>
+    <div class="loader-text brand-name">Marvel Media</div>
+  </div>
+</div>
+
+<!-- Theme Switcher (left side dots) -->
+<div class="theme-switcher" id="theme-switcher">
+  <button class="ts-btn" data-theme="theme-noir" style="background:#4f8ef7" title="Midnight Noir"><span class="ts-tooltip">Midnight Noir</span></button>
+  <button class="ts-btn" data-theme="theme-sage" style="background:#3d6b4f" title="Forest Sage"><span class="ts-tooltip">Forest Sage</span></button>
+  <button class="ts-btn" data-theme="theme-blush" style="background:#c2607a" title="Blush Studio"><span class="ts-tooltip">Blush Studio</span></button>
+  <button class="ts-btn active" data-theme="theme-gold" style="background:#c9a84c" title="Obsidian Gold"><span class="ts-tooltip">Obsidian Gold</span></button>
+  <button class="ts-btn" data-theme="theme-arctic" style="background:#2563eb" title="Arctic Minimal"><span class="ts-tooltip">Arctic Minimal</span></button>
+</div>
+
+<!-- Navbar -->
+<nav id="main-nav">
+  <a href="#home" class="nav-logo" id="nav-logo-el"><span class="brand-name">Marvel</span><span>.</span></a>
+  <ul class="nav-links">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#team">Team</a></li>
+    <li><a href="#gallery">Gallery</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#testimonials">Reviews</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#" class="admin-btn" id="admin-open-btn">Admin</a></li>
+  </ul>
+  <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+</nav>
+<div class="mobile-menu" id="mobile-menu">
+  <a href="#home" class="mob-link">Home</a>
+  <a href="#about" class="mob-link">About</a>
+  <a href="#team" class="mob-link">Team</a>
+  <a href="#gallery" class="mob-link">Gallery</a>
+  <a href="#services" class="mob-link">Services</a>
+  <a href="#testimonials" class="mob-link">Reviews</a>
+  <a href="#contact" class="mob-link">Contact</a>
+  <a href="#" id="admin-open-mob">Admin ↗</a>
+</div>
+
+<!-- HERO -->
+<section id="home">
+  <div class="hero-bg" id="hero-bg-el" style="background-image:url('https://images.unsplash.com/photo-1452587925148-ce544e77e70d?w=1800&q=80')"></div>
+  <div class="hero-ov"></div>
+  <div class="hero-content">
+    <p class="hero-eyebrow" id="hero-eyebrow-el">Professional Photography Studio</p>
+    <h1 class="hero-title" id="hero-title-el">Every Frame<br>Tells a <em id="hero-italic-el">Story</em></h1>
+    <p class="hero-sub" id="hero-sub-el">We craft timeless images that preserve your most meaningful moments with artistry, precision, and heart.</p>
+    <div class="hero-cta">
+      <a href="#gallery" class="btn btn-accent" id="hero-btn1-el">View Gallery</a>
+      <a href="#contact" class="btn btn-outline" id="hero-btn2-el">Book a Session</a>
+    </div>
+  </div>
+  <div class="hero-scroll"><div class="scroll-line"></div><span>Scroll</span></div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="alt">
+  <div class="container">
+    <div class="about-grid fade-in">
+      <div class="about-img-wrap">
+        <div class="img-frame"></div>
+        <img id="about-img-el" src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=800&q=80" alt="Photographer at work" loading="lazy"/>
+      </div>
+      <div>
+        <span class="section-label" id="about-label-el">Our Story</span>
+        <h2 class="section-title" id="about-title-el">Passion Behind Every Lens</h2>
+        <p class="section-sub" id="about-p1-el">Marvel Media Company was founded with one belief — that photography is not just about images, it's about preserving emotions, connections, and moments that matter.</p>
+        <p class="section-sub" style="margin-top:14px" id="about-p2-el">With over a decade of experience across weddings, portraits, and commercial projects, our team brings both technical mastery and genuine warmth to every shoot.</p>
+        <div class="about-stats">
+          <div><span class="stat-num" id="stat1-num">12+</span><span class="stat-lbl" id="stat1-lbl">Years</span></div>
+          <div><span class="stat-num" id="stat2-num">1.4K</span><span class="stat-lbl" id="stat2-lbl">Sessions</span></div>
+          <div><span class="stat-num" id="stat3-num">98%</span><span class="stat-lbl" id="stat3-lbl">Happy Clients</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TEAM -->
+<section id="team" class="alt2">
+  <div class="container">
+    <div class="fade-in" style="text-align:center;max-width:600px;margin:0 auto">
+      <span class="section-label">The People</span>
+      <h2 class="section-title" id="team-title-el">Meet Our Team</h2>
+      <p class="section-sub" style="margin:0 auto" id="team-sub-el">A passionate group of artists dedicated to creating extraordinary images.</p>
+    </div>
+    <div class="team-grid fade-in" id="team-grid"></div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery">
+  <div class="container">
+    <div class="gallery-hdr fade-in">
+      <div>
+        <span class="section-label">Portfolio</span>
+        <h2 class="section-title" id="gallery-title-el">Our Work</h2>
+      </div>
+      <p style="color:var(--muted);font-size:14px;max-width:280px;line-height:1.7;font-family:var(--body-font)" id="gallery-sub-el">A curated selection from weddings, portraits, events, and commercial projects.</p>
+    </div>
+    <div class="gallery-grid fade-in" id="gallery-grid"></div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="alt">
+  <div class="container">
+    <div class="fade-in" style="text-align:center;max-width:600px;margin:0 auto">
+      <span class="section-label">What We Offer</span>
+      <h2 class="section-title" id="services-title-el">Photography Services</h2>
+      <p class="section-sub" style="margin:0 auto" id="services-sub-el">From intimate portraits to grand events, we have a package tailored to your vision and budget.</p>
+    </div>
+    <div class="services-grid fade-in" id="services-grid"></div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials" class="alt2">
+  <div class="container">
+    <div class="fade-in" style="text-align:center;max-width:600px;margin:0 auto">
+      <span class="section-label">Kind Words</span>
+      <h2 class="section-title" id="test-title-el">Client Reviews</h2>
+      <p class="section-sub" style="margin:0 auto">Stories from the people we've had the honour of working with.</p>
+    </div>
+    <div class="test-grid fade-in" id="test-grid"></div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="container">
+    <div class="contact-grid">
+      <div class="fade-in">
+        <span class="section-label">Get in Touch</span>
+        <h2 class="section-title" id="contact-title-el">Let's Create Together</h2>
+        <p class="section-sub" id="contact-sub-el">Have a project in mind? We'd love to hear about it. Reach out and let's start the conversation.</p>
+        <div style="margin-top:36px">
+          <div class="contact-detail"><div class="c-icon">📍</div><div><h4>Location</h4><p id="ct-loc-el">Chennai, Tamil Nadu, India</p></div></div>
+          <div class="contact-detail"><div class="c-icon">📞</div><div><h4>Phone</h4><p><a href="tel:+919999999999" id="ct-phone-el">+91 99999 99999</a></p></div></div>
+          <div class="contact-detail"><div class="c-icon">✉️</div><div><h4>Email</h4><p><a href="/cdn-cgi/l/email-protection#5d35383131321d303c2f2b3831303839343c733e3230" id="ct-email-el"><span class="__cf_email__" data-cfemail="771f121b1b18371a160501121b1a12131e165914181a">[email&#160;protected]</span></a></p></div></div>
+          <div class="contact-detail"><div class="c-icon">📸</div><div><h4>Instagram</h4><p><a href="https://instagram.com" target="_blank" id="ct-insta-el">@marvelmediaco</a></p></div></div>
+        </div>
+      </div>
+      <div class="fade-in">
+        <form class="contact-form" id="contact-form" novalidate>
+          <div class="form-group"><label>Your Name</label><input type="text" name="from_name" placeholder="John Doe" required/></div>
+          <div class="form-group"><label>Email Address</label><input type="email" name="from_email" placeholder="john@example.com" required/></div>
+          <div class="form-group"><label>Message</label><textarea name="message" rows="5" placeholder="Tell us about your project..." required></textarea></div>
+          <button type="submit" class="btn btn-accent" id="form-submit-btn" style="width:100%;border:none">Send Message</button>
+          <div class="form-success" id="form-success">✓ Thank you! We'll get back to you within 24 hours.</div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p id="footer-text-el">© 2025 Marvel Media Company. All rights reserved. Crafted with ♥ in Chennai.</p>
+</footer>
+
+<!-- WhatsApp -->
+<a href="https://wa.me/919999999999" class="wa-btn" id="wa-btn" target="_blank" rel="noopener" aria-label="WhatsApp">
+  <svg viewBox="0 0 32 32"><path d="M16 .5C7.44.5.5 7.44.5 16c0 2.79.72 5.49 2.1 7.87L.5 31.5l7.84-2.06A15.44 15.44 0 0016 31.5c8.56 0 15.5-6.94 15.5-15.5S24.56.5 16 .5zm0 28.3a12.74 12.74 0 01-6.5-1.79l-.46-.28-4.66 1.22 1.24-4.52-.3-.47A12.74 12.74 0 0116 3.2c7.05 0 12.8 5.75 12.8 12.8S23.05 28.8 16 28.8zm7.01-9.58c-.38-.19-2.26-1.12-2.61-1.24-.35-.13-.6-.19-.86.19-.25.38-.98 1.24-1.2 1.5-.22.25-.44.28-.82.09-.38-.19-1.6-.59-3.05-1.88-1.13-1-1.9-2.23-2.12-2.61-.22-.38-.02-.59.17-.77.17-.17.38-.44.57-.66.19-.22.25-.38.38-.63.13-.25.06-.47-.03-.66-.09-.19-.86-2.07-1.18-2.83-.31-.74-.63-.64-.86-.65h-.73c-.25 0-.66.09-1 .47-.35.38-1.32 1.28-1.32 3.13 0 1.84 1.35 3.62 1.54 3.87.19.25 2.65 4.05 6.42 5.68.9.39 1.6.62 2.14.79.9.28 1.72.24 2.37.15.72-.11 2.26-.93 2.58-1.82.32-.89.32-1.66.22-1.82-.1-.16-.35-.25-.73-.44z"/></svg>
+</a>
+
+<!-- ═══════ ADMIN PANEL ═══════ -->
+<div class="admin-overlay" id="admin-overlay">
+  <div class="admin-panel">
+    <div class="admin-header">
+      <div><h2>Admin Panel</h2><p id="admin-header-sub">Sign in to manage your website.</p></div>
+      <button class="admin-close-x" id="admin-close">×</button>
+    </div>
+    <!-- LOGIN -->
+    <div id="admin-login">
+      <div class="login-box">
+        <h3>Welcome Back</h3>
+        <p>Enter your password to access the dashboard.</p>
+        <input type="password" id="pw-input" placeholder="Password" autocomplete="current-password"/>
+        <p class="login-error" id="login-err">Incorrect password. Try again.</p>
+        <button class="btn btn-accent" style="width:100%;border:none" onclick="doLogin()">Sign In</button>
+        <p style="font-size:12px;color:var(--muted);margin-top:16px;font-family:var(--body-font)">Default password: <strong>admin123</strong></p>
+      </div>
+    </div>
+    <!-- MAIN -->
+    <div id="admin-main" style="display:none;flex:1;overflow:hidden">
+      <div class="admin-body">
+        <div class="admin-sidebar">
+          <button class="admin-tab active" data-tab="dashboard">Dashboard</button>
+          <button class="admin-tab" data-tab="theme">Themes</button>
+          <button class="admin-tab" data-tab="site">Site Info</button>
+          <button class="admin-tab" data-tab="hero">Hero</button>
+          <button class="admin-tab" data-tab="about">About</button>
+          <button class="admin-tab" data-tab="team">Team</button>
+          <button class="admin-tab" data-tab="gallery">Gallery</button>
+          <button class="admin-tab" data-tab="services">Services</button>
+          <button class="admin-tab" data-tab="reviews">Reviews</button>
+          <button class="admin-tab" data-tab="contact">Contact</button>
+          <button class="admin-tab" data-tab="footer">Footer</button>
+          <button class="admin-tab" data-tab="settings">Settings</button>
+        </div>
+        <div class="admin-content">
+
+          <!-- DASHBOARD -->
+          <div class="tab-pane active" id="tab-dashboard">
+            <p class="a-sub">Your website at a glance.</p>
+            <div class="stat-row">
+              <div class="s-card"><div class="num" id="db-g">0</div><div class="lbl">Gallery</div></div>
+              <div class="s-card"><div class="num" id="db-t">0</div><div class="lbl">Team</div></div>
+              <div class="s-card"><div class="num" id="db-s">0</div><div class="lbl">Services</div></div>
+            </div>
+            <div class="stat-row">
+              <div class="s-card"><div class="num" id="db-r">0</div><div class="lbl">Reviews</div></div>
+              <div class="s-card"><div class="num" id="db-theme-label">Gold</div><div class="lbl">Theme</div></div>
+              <div class="s-card"><div class="num">✓</div><div class="lbl">Live</div></div>
+            </div>
+            <div class="a-card">
+              <h4>Quick Guide</h4>
+              <ul style="font-size:13px;color:var(--muted);line-height:2.1;padding-left:18px;font-family:var(--body-font)">
+                <li>Use the <strong>Themes</strong> tab to switch between 5 visual styles instantly.</li>
+                <li>The coloured dots on the left edge of the page also switch themes.</li>
+                <li>All changes apply instantly — no page reload needed.</li>
+                <li>Gallery accepts any direct image URL.</li>
+                <li>Change your admin password in <strong>Settings</strong>.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- THEMES -->
+          <div class="tab-pane" id="tab-theme">
+            <h3 class="a-title">Choose Theme</h3>
+            <p class="a-sub">Select a visual style for your entire website. Applied instantly.</p>
+            <div class="theme-grid" id="admin-theme-grid"></div>
+          </div>
+
+          <!-- SITE INFO -->
+          <div class="tab-pane" id="tab-site">
+            <h3 class="a-title">Site Information</h3>
+            <p class="a-sub">Update brand name, logo, page title, and custom accent color.</p>
+            <div class="a-fg"><label>Company Name</label><input type="text" id="si-brand" placeholder="Marvel Media Company"/></div>
+            <div class="a-fg"><label>Page Title (browser tab)</label><input type="text" id="si-title" placeholder="Marvel Media Company | Photography"/></div>
+            <div class="a-fg"><label>Meta Description (SEO)</label><textarea id="si-desc" placeholder="Short description for search engines..."></textarea></div>
+            <div class="a-fg"><label>Navbar Logo Text</label><input type="text" id="si-logo" placeholder="Marvel"/></div>
+            <div class="a-fg"><label>Custom Accent Color (overrides theme)</label>
+              <div class="color-row"><input type="color" id="si-color" value="#c9a84c"/><span style="font-size:12px;color:var(--muted);font-family:var(--body-font)">Overrides theme accent color</span></div>
+            </div>
+            <button class="a-add-btn" onclick="applySiteInfo()">Apply Changes</button>
+            <p class="a-ok" id="si-ok">✓ Site info updated!</p>
+          </div>
+
+          <!-- HERO -->
+          <div class="tab-pane" id="tab-hero">
+            <h3 class="a-title">Hero Section</h3>
+            <p class="a-sub">Edit the main banner — text, background image, and CTA buttons.</p>
+            <div class="a-fg"><label>Eyebrow Text</label><input type="text" id="h-eyebrow" placeholder="Professional Photography Studio"/></div>
+            <div class="a-fg"><label>Main Title (use | for line break)</label><input type="text" id="h-title" placeholder="Every Frame|Tells a Story"/></div>
+            <div class="a-fg"><label>Italic / Accent Word</label><input type="text" id="h-italic" placeholder="Story"/></div>
+            <div class="a-fg"><label>Subtitle</label><textarea id="h-sub"></textarea></div>
+            <div class="a-form-row">
+              <div class="a-fg"><label>Button 1 Text</label><input type="text" id="h-btn1" placeholder="View Gallery"/></div>
+              <div class="a-fg"><label>Button 1 Link</label><input type="text" id="h-btn1l" placeholder="#gallery"/></div>
+            </div>
+            <div class="a-form-row">
+              <div class="a-fg"><label>Button 2 Text</label><input type="text" id="h-btn2" placeholder="Book a Session"/></div>
+              <div class="a-fg"><label>Button 2 Link</label><input type="text" id="h-btn2l" placeholder="#contact"/></div>
+            </div>
+            <div class="a-fg"><label>Background Image URL</label><input type="url" id="h-bg" placeholder="https://images.unsplash.com/..."/></div>
+            <img class="prev-img" id="h-prev"/>
+            <button class="a-add-btn" style="margin-top:14px" onclick="applyHero()">Apply Changes</button>
+            <p class="a-ok" id="h-ok">✓ Hero updated!</p>
+          </div>
+
+          <!-- ABOUT -->
+          <div class="tab-pane" id="tab-about">
+            <h3 class="a-title">About Section</h3>
+            <p class="a-sub">Edit your story, image, and statistics.</p>
+            <div class="a-fg"><label>Section Label</label><input type="text" id="ab-label" placeholder="Our Story"/></div>
+            <div class="a-fg"><label>Title</label><input type="text" id="ab-title" placeholder="Passion Behind Every Lens"/></div>
+            <div class="a-fg"><label>Paragraph 1</label><textarea id="ab-p1"></textarea></div>
+            <div class="a-fg"><label>Paragraph 2</label><textarea id="ab-p2"></textarea></div>
+            <div class="a-fg"><label>About Image URL</label><input type="url" id="ab-img" placeholder="https://..."/></div>
+            <img class="prev-img" id="ab-prev"/>
+            <hr class="a-divider"/>
+            <p style="font-size:11px;font-weight:500;color:var(--muted);letter-spacing:.12em;text-transform:uppercase;margin-bottom:14px;font-family:var(--body-font)">Statistics</p>
+            <div class="a-form-row">
+              <div class="a-fg"><label>Stat 1 Value</label><input type="text" id="ab-s1n" placeholder="12+"/></div>
+              <div class="a-fg"><label>Stat 1 Label</label><input type="text" id="ab-s1l" placeholder="Years"/></div>
+            </div>
+            <div class="a-form-row">
+              <div class="a-fg"><label>Stat 2 Value</label><input type="text" id="ab-s2n" placeholder="1.4K"/></div>
+              <div class="a-fg"><label>Stat 2 Label</label><input type="text" id="ab-s2l" placeholder="Sessions"/></div>
+            </div>
+            <div class="a-form-row">
+              <div class="a-fg"><label>Stat 3 Value</label><input type="text" id="ab-s3n" placeholder="98%"/></div>
+              <div class="a-fg"><label>Stat 3 Label</label><input type="text" id="ab-s3l" placeholder="Happy Clients"/></div>
+            </div>
+            <button class="a-add-btn" onclick="applyAbout()">Apply Changes</button>
+            <p class="a-ok" id="ab-ok">✓ About updated!</p>
+          </div>
+
+          <!-- TEAM -->
+          <div class="tab-pane" id="tab-team">
+            <h3 class="a-title">Team Members</h3>
+            <p class="a-sub">Add or remove team members displayed on the site.</p>
+            <div class="a-card">
+              <h4>Add New Member</h4>
+              <div class="a-form-row">
+                <div class="a-fg"><label>Name</label><input type="text" id="tm-name" placeholder="Jane Doe"/></div>
+                <div class="a-fg"><label>Role</label><input type="text" id="tm-role" placeholder="Lead Photographer"/></div>
+              </div>
+              <div class="a-fg"><label>Bio</label><textarea id="tm-bio" placeholder="Short bio..."></textarea></div>
+              <div class="a-fg"><label>Photo URL</label><input type="url" id="tm-img" placeholder="https://..."/></div>
+              <button class="a-add-btn" onclick="addTeamMember()">+ Add Member</button>
+              <p class="a-ok" id="tm-ok">✓ Member added!</p>
+            </div>
+            <div class="a-list" id="tm-list"></div>
+          </div>
+
+          <!-- GALLERY -->
+          <div class="tab-pane" id="tab-gallery">
+            <h3 class="a-title">Gallery</h3>
+            <p class="a-sub">Add or remove portfolio images.</p>
+            <div class="a-fg"><label>Gallery Title</label><input type="text" id="gl-title" placeholder="Our Work" oninput="document.getElementById('gallery-title-el').textContent=this.value"/></div>
+            <div class="a-fg"><label>Gallery Subtitle</label><textarea id="gl-sub" placeholder="A curated selection..." oninput="document.getElementById('gallery-sub-el').textContent=this.value" style="min-height:60px"></textarea></div>
+            <hr class="a-divider"/>
+            <div class="a-card">
+              <h4>Add New Image</h4>
+              <div class="a-form-row">
+                <div class="a-fg"><label>Image URL</label><input type="url" id="gl-url" placeholder="https://images.unsplash.com/..."/></div>
+                <div class="a-fg"><label>Category Label</label><input type="text" id="gl-label" placeholder="Wedding"/></div>
+              </div>
+              <button class="a-add-btn" onclick="addGalleryImage()">+ Add Image</button>
+              <p class="a-ok" id="gl-ok">✓ Image added!</p>
+            </div>
+            <div class="a-list" id="gl-list"></div>
+          </div>
+
+          <!-- SERVICES -->
+          <div class="tab-pane" id="tab-services">
+            <h3 class="a-title">Services</h3>
+            <p class="a-sub">Manage the photography services you offer.</p>
+            <div class="a-fg"><label>Section Title</label><input type="text" id="sv-title" placeholder="Photography Services" oninput="document.getElementById('services-title-el').textContent=this.value"/></div>
+            <div class="a-fg"><label>Section Subtitle</label><textarea id="sv-sub" placeholder="From intimate portraits..." oninput="document.getElementById('services-sub-el').textContent=this.value" style="min-height:60px"></textarea></div>
+            <hr class="a-divider"/>
+            <div class="a-card">
+              <h4>Add New Service</h4>
+              <div class="a-form-row">
+                <div class="a-fg"><label>Icon (emoji)</label><input type="text" id="sv-icon" placeholder="💍" maxlength="4"/></div>
+                <div class="a-fg"><label>Service Name</label><input type="text" id="sv-name" placeholder="Wedding Photography"/></div>
+              </div>
+              <div class="a-fg"><label>Description</label><textarea id="sv-desc" placeholder="Service description..."></textarea></div>
+              <div class="a-form-row">
+                <div class="a-fg"><label>Price</label><input type="text" id="sv-price" placeholder="₹25,000"/></div>
+                <div class="a-fg"><label>Unit</label><input type="text" id="sv-unit" placeholder="/ day"/></div>
+              </div>
+              <button class="a-add-btn" onclick="addService()">+ Add Service</button>
+              <p class="a-ok" id="sv-ok">✓ Service added!</p>
+            </div>
+            <div class="a-list" id="sv-list"></div>
+          </div>
+
+          <!-- REVIEWS -->
+          <div class="tab-pane" id="tab-reviews">
+            <h3 class="a-title">Client Reviews</h3>
+            <p class="a-sub">Add testimonials from happy clients.</p>
+            <div class="a-fg"><label>Section Title</label><input type="text" id="rv-title" placeholder="Client Reviews" oninput="document.getElementById('test-title-el').textContent=this.value"/></div>
+            <hr class="a-divider"/>
+            <div class="a-card">
+              <h4>Add New Review</h4>
+              <div class="a-form-row">
+                <div class="a-fg"><label>Client Name</label><input type="text" id="rv-name" placeholder="Priya S."/></div>
+                <div class="a-fg"><label>Stars (1–5)</label><input type="number" id="rv-stars" min="1" max="5" value="5"/></div>
+              </div>
+              <div class="a-fg"><label>Review Text</label><textarea id="rv-text" placeholder="Amazing experience..."></textarea></div>
+              <div class="a-form-row">
+                <div class="a-fg"><label>Role / Location</label><input type="text" id="rv-role" placeholder="Bride, Chennai"/></div>
+                <div class="a-fg"><label>Avatar URL (optional)</label><input type="url" id="rv-avatar" placeholder="https://..."/></div>
+              </div>
+              <button class="a-add-btn" onclick="addReview()">+ Add Review</button>
+              <p class="a-ok" id="rv-ok">✓ Review added!</p>
+            </div>
+            <div class="a-list" id="rv-list"></div>
+          </div>
+
+          <!-- CONTACT -->
+          <div class="tab-pane" id="tab-contact">
+            <h3 class="a-title">Contact Details</h3>
+            <p class="a-sub">Update location, phone, email, and social links.</p>
+            <div class="a-fg"><label>Section Title</label><input type="text" id="ct-title" placeholder="Let's Create Together"/></div>
+            <div class="a-fg"><label>Section Subtitle</label><textarea id="ct-sub" style="min-height:60px"></textarea></div>
+            <hr class="a-divider"/>
+            <div class="a-fg"><label>Location</label><input type="text" id="ct-loc" placeholder="Chennai, Tamil Nadu, India"/></div>
+            <div class="a-fg"><label>Phone Number</label><input type="text" id="ct-phone" placeholder="+91 99999 99999"/></div>
+            <div class="a-fg"><label>Email Address</label><input type="email" id="ct-email" placeholder="hello@marvelmedia.com"/></div>
+            <div class="a-fg"><label>Instagram Handle</label><input type="text" id="ct-insta" placeholder="@marvelmediaco"/></div>
+            <div class="a-fg"><label>Instagram URL</label><input type="url" id="ct-insta-url" placeholder="https://instagram.com/marvelmediaco"/></div>
+            <div class="a-fg"><label>WhatsApp Number (with country code)</label><input type="text" id="ct-wa" placeholder="919999999999"/></div>
+            <button class="a-add-btn" onclick="applyContact()">Apply Changes</button>
+            <p class="a-ok" id="ct-ok">✓ Contact updated!</p>
+          </div>
+
+          <!-- FOOTER -->
+          <div class="tab-pane" id="tab-footer">
+            <h3 class="a-title">Footer</h3>
+            <p class="a-sub">Edit the footer copyright text.</p>
+            <div class="a-fg"><label>Footer Text</label><textarea id="ft-text" placeholder="© 2025 Marvel Media Company..."></textarea></div>
+            <button class="a-add-btn" onclick="applyFooter()">Apply Changes</button>
+            <p class="a-ok" id="ft-ok">✓ Footer updated!</p>
+          </div>
+
+          <!-- SETTINGS -->
+          <div class="tab-pane" id="tab-settings">
+            <h3 class="a-title">Settings</h3>
+            <p class="a-sub">Manage your admin password and reset options.</p>
+            <div class="a-card">
+              <h4>Change Password</h4>
+              <div class="a-fg"><label>Current Password</label><input type="password" id="s-old"/></div>
+              <div class="a-fg"><label>New Password</label><input type="password" id="s-new"/></div>
+              <div class="a-fg"><label>Confirm New Password</label><input type="password" id="s-conf"/></div>
+              <button class="a-add-btn" onclick="changePw()">Update Password</button>
+              <p class="a-ok" id="s-pw-ok">✓ Password changed!</p>
+              <p style="font-size:12px;color:#d44;display:none;margin-top:8px;font-family:var(--body-font)" id="s-pw-err">Check your inputs and try again.</p>
+            </div>
+            <div class="a-card" style="margin-top:16px">
+              <h4>Reset Site Content</h4>
+              <p style="font-size:13px;color:var(--muted);margin-bottom:14px;line-height:1.6;font-family:var(--body-font)">Restore all default content. Your password and theme will not change.</p>
+              <button class="a-add-btn danger" onclick="resetSite()">Reset to Defaults</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+/* ══════════════════════════
+   THEME ENGINE
+══════════════════════════ */
+const THEMES = [
+  {id:'theme-noir',  name:'Midnight Noir',  dot:'#4f8ef7', label:'Noir',
+   heroImg:'https://images.unsplash.com/photo-1614850715649-1d0106293bd1?w=1800&q=80',
+   bg:'#0a0a0f', text:'#e8eaf0', accent:'#4f8ef7'},
+  {id:'theme-sage',  name:'Forest Sage',    dot:'#3d6b4f', label:'Sage',
+   heroImg:'https://images.unsplash.com/photo-1501854140801-50d01698950b?w=1800&q=80',
+   bg:'#e8f0e9', text:'#1e2d24', accent:'#3d6b4f'},
+  {id:'theme-blush', name:'Blush Studio',   dot:'#c2607a', label:'Blush',
+   heroImg:'https://images.unsplash.com/photo-1519741497674-611481863552?w=1800&q=80',
+   bg:'#fde8ee', text:'#2d1f23', accent:'#c2607a'},
+  {id:'theme-gold',  name:'Obsidian Gold',  dot:'#c9a84c', label:'Gold',
+   heroImg:'https://images.unsplash.com/photo-1452587925148-ce544e77e70d?w=1800&q=80',
+   bg:'#1a1810', text:'#f5f0e8', accent:'#c9a84c'},
+  {id:'theme-arctic',name:'Arctic Minimal', dot:'#2563eb', label:'Arctic',
+   heroImg:'https://images.unsplash.com/photo-1471341971476-ae15ff5dd4ea?w=1800&q=80',
+   bg:'#eff6ff', text:'#0f172a', accent:'#2563eb'},
+];
+
+let currentTheme = 'theme-gold';
+
+function applyTheme(themeId) {
+  document.body.className = themeId;
+  currentTheme = themeId;
+  document.querySelectorAll('.ts-btn').forEach(b => b.classList.toggle('active', b.dataset.theme === themeId));
+  document.querySelectorAll('.theme-opt').forEach(o => {
+    o.classList.toggle('active-theme', o.dataset.theme === themeId);
+    o.querySelector('.theme-opt-label').textContent = o.dataset.theme === themeId ? '✓ Active' : 'Click to apply';
+  });
+  const t = THEMES.find(x => x.id === themeId);
+  if (t) {
+    document.getElementById('hero-bg-el').style.backgroundImage = `url('${t.heroImg}')`;
+    document.getElementById('db-theme-label').textContent = t.label;
+  }
+}
+
+function buildThemeGrid() {
+  const grid = document.getElementById('admin-theme-grid');
+  grid.innerHTML = '';
+  THEMES.forEach(t => {
+    const el = document.createElement('div');
+    el.className = 'theme-opt' + (t.id === currentTheme ? ' active-theme' : '');
+    el.dataset.theme = t.id;
+    el.innerHTML = `
+      <div class="theme-opt-preview" style="background:${t.bg}">
+        <div class="theme-dot" style="background:${t.accent}"></div>
+        <span class="theme-opt-name" style="color:${t.text};font-size:13px;font-weight:500">${t.name}</span>
+      </div>
+      <div class="theme-opt-label">${t.id === currentTheme ? '✓ Active' : 'Click to apply'}</div>`;
+    el.addEventListener('click', () => applyTheme(t.id));
+    grid.appendChild(el);
+  });
+}
+
+/* ══════════════════════════
+   DATA
+══════════════════════════ */
+let pw = 'admin123';
+const defaults = {
+  gallery:[
+    {url:'https://images.unsplash.com/photo-1583939003579-730e3918a45a?w=600&q=80',label:'Wedding'},
+    {url:'https://images.unsplash.com/photo-1519741497674-611481863552?w=600&q=80',label:'Portrait'},
+    {url:'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&q=80',label:'Portrait'},
+    {url:'https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?w=600&q=80',label:'Event'},
+    {url:'https://images.unsplash.com/photo-1501854140801-50d01698950b?w=600&q=80',label:'Landscape'},
+    {url:'https://images.unsplash.com/photo-1512790182412-b19e6d62bc39?w=600&q=80',label:'Commercial'},
+    {url:'https://images.unsplash.com/photo-1530103862676-de8c9debad1d?w=600&q=80',label:'Event'},
+    {url:'https://images.unsplash.com/photo-1526045431048-f857369baa09?w=600&q=80',label:'Portrait'},
+    {url:'https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?w=600&q=80',label:'Wedding'},
+  ],
+  team:[
+    {name:'Arjun Kumar',role:'Lead Photographer',bio:'Specializing in wedding and portrait photography with 12 years of experience.',img:'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&q=80'},
+    {name:'Priya Nair',role:'Portrait Specialist',bio:'Award-winning portrait photographer with a passion for authentic storytelling.',img:'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&q=80'},
+    {name:'Rohan Mehta',role:'Commercial Photographer',bio:'Expert in product and brand photography that drives business results.',img:'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&q=80'},
+  ],
+  services:[
+    {icon:'💍',name:'Wedding Photography',desc:'Full-day coverage of your special day with two photographers, drone shots, and edited digital gallery.',price:'₹25,000',unit:'/ day'},
+    {icon:'🖼️',name:'Portrait Sessions',desc:'Headshots, family portraits, maternity, and personal branding shoots in studio or on location.',price:'₹5,000',unit:'/ session'},
+    {icon:'🎉',name:'Event Coverage',desc:'Corporate events, birthdays, celebrations, and more — fully covered with quick turnaround delivery.',price:'₹12,000',unit:'/ event'},
+    {icon:'🏪',name:'Commercial Photography',desc:'Product photography, brand campaigns, and marketing materials that make your business stand out.',price:'₹8,000',unit:'/ half day'},
+  ],
+  reviews:[
+    {name:'Priya & Rahul',role:'Wedding Couple, Chennai',stars:5,text:"Marvel Media captured our wedding perfectly. Every emotion, every moment — beautifully preserved. We'll treasure these photos forever.",avatar:''},
+    {name:'Karthik S.',role:'Business Owner',stars:5,text:'The product photography transformed our online store. Sales increased 40% after the new images went live. Absolutely professional.',avatar:''},
+    {name:'Meena Krishnan',role:'Portrait Client',stars:5,text:'I was nervous in front of the camera, but the team made me so comfortable. The photos came out beyond my expectations!',avatar:''},
+  ]
+};
+let data = JSON.parse(JSON.stringify(defaults));
+
+/* ══════════════════════════
+   RENDER FUNCTIONS
+══════════════════════════ */
+function renderGallery() {
+  const g = document.getElementById('gallery-grid');
+  g.innerHTML = '';
+  data.gallery.forEach(item => {
+    const el = document.createElement('div');
+    el.className = 'gallery-item';
+    el.innerHTML = `<img src="${item.url}" alt="${item.label}" loading="lazy"/><div class="gallery-overlay"><span>${item.label}</span></div>`;
+    el.style.cssText = 'opacity:0;transform:scale(.95);transition:opacity .4s,transform .4s';
+    g.appendChild(el);
+    requestAnimationFrame(() => requestAnimationFrame(() => { el.style.opacity='1'; el.style.transform='scale(1)'; }));
+  });
+  updateDB();
+}
+function renderTeam() {
+  const g = document.getElementById('team-grid');
+  g.innerHTML = '';
+  data.team.forEach(m => {
+    const el = document.createElement('div');
+    el.className = 'team-card';
+    el.innerHTML = `<img src="${m.img||'https://images.unsplash.com/photo-1511367461989-f85a21fda167?w=400&q=80'}" alt="${m.name}" loading="lazy"/><div class="team-card-body"><h3>${m.name}</h3><span class="role">${m.role}</span><p>${m.bio}</p></div>`;
+    g.appendChild(el);
+  });
+  updateDB();
+}
+function renderServices() {
+  const g = document.getElementById('services-grid');
+  g.innerHTML = '';
+  data.services.forEach(s => {
+    const el = document.createElement('div');
+    el.className = 'service-card';
+    el.innerHTML = `<span class="svc-icon">${s.icon}</span><h3>${s.name}</h3><p class="desc">${s.desc}</p><div class="price">${s.price} <span>${s.unit}</span></div>`;
+    g.appendChild(el);
+  });
+  updateDB();
+}
+function renderReviews() {
+  const g = document.getElementById('test-grid');
+  g.innerHTML = '';
+  data.reviews.forEach(r => {
+    const stars = '★'.repeat(r.stars)+'☆'.repeat(5-r.stars);
+    const av = r.avatar ? `<img class="avatar-img" src="${r.avatar}" alt="${r.name}"/>` : `<div class="avatar-ph">${r.name.charAt(0)}</div>`;
+    const el = document.createElement('div');
+    el.className = 'test-card';
+    el.innerHTML = `<div class="stars">${stars}</div><blockquote>"${r.text}"</blockquote><div class="test-author">${av}<div class="author-info"><strong>${r.name}</strong><span>${r.role}</span></div></div>`;
+    g.appendChild(el);
+  });
+  updateDB();
+}
+function renderGalleryList() {
+  const l = document.getElementById('gl-list'); l.innerHTML='';
+  data.gallery.forEach((item,i) => {
+    const el=document.createElement('div');el.className='a-item';
+    el.innerHTML=`<img src="${item.url}" alt=""/><div class="a-item-info"><strong>${item.label}</strong><span style="font-size:11px;word-break:break-all">${item.url.substring(0,52)}...</span></div><button class="a-del-btn" onclick="delGallery(${i})">Remove</button>`;
+    l.appendChild(el);
+  });
+}
+function renderTeamList() {
+  const l=document.getElementById('tm-list');l.innerHTML='';
+  data.team.forEach((m,i) => {
+    const el=document.createElement('div');el.className='a-item';
+    el.innerHTML=`<div class="a-item-info"><strong>${m.name}</strong><span>${m.role}</span></div><button class="a-del-btn" onclick="delTeam(${i})">Remove</button>`;
+    l.appendChild(el);
+  });
+}
+function renderServicesList() {
+  const l=document.getElementById('sv-list');l.innerHTML='';
+  data.services.forEach((s,i) => {
+    const el=document.createElement('div');el.className='a-item';
+    el.innerHTML=`<div class="a-item-info"><strong>${s.icon} ${s.name}</strong><span>${s.price} ${s.unit}</span></div><button class="a-del-btn" onclick="delService(${i})">Remove</button>`;
+    l.appendChild(el);
+  });
+}
+function renderReviewsList() {
+  const l=document.getElementById('rv-list');l.innerHTML='';
+  data.reviews.forEach((r,i) => {
+    const el=document.createElement('div');el.className='a-item';
+    el.innerHTML=`<div class="a-item-info"><strong>${r.name}</strong><span>${'★'.repeat(r.stars)} · ${r.text.substring(0,48)}...</span></div><button class="a-del-btn" onclick="delReview(${i})">Remove</button>`;
+    l.appendChild(el);
+  });
+}
+function updateDB() {
+  document.getElementById('db-g').textContent=data.gallery.length;
+  document.getElementById('db-t').textContent=data.team.length;
+  document.getElementById('db-s').textContent=data.services.length;
+  document.getElementById('db-r').textContent=data.reviews.length;
+}
+
+/* ══════════════════════════
+   ADMIN ACTIONS
+══════════════════════════ */
+function addGalleryImage(){const url=document.getElementById('gl-url').value.trim();const label=document.getElementById('gl-label').value.trim()||'Photo';if(!url)return;data.gallery.unshift({url,label});renderGallery();renderGalleryList();document.getElementById('gl-url').value='';document.getElementById('gl-label').value='';ok('gl-ok');}
+function delGallery(i){data.gallery.splice(i,1);renderGallery();renderGalleryList();}
+function addTeamMember(){const name=document.getElementById('tm-name').value.trim();const role=document.getElementById('tm-role').value.trim();const bio=document.getElementById('tm-bio').value.trim();const img=document.getElementById('tm-img').value.trim();if(!name||!role)return;data.team.push({name,role,bio,img});renderTeam();renderTeamList();['tm-name','tm-role','tm-bio','tm-img'].forEach(id=>document.getElementById(id).value='');ok('tm-ok');}
+function delTeam(i){data.team.splice(i,1);renderTeam();renderTeamList();}
+function addService(){const icon=document.getElementById('sv-icon').value.trim()||'📷';const name=document.getElementById('sv-name').value.trim();const desc=document.getElementById('sv-desc').value.trim();const price=document.getElementById('sv-price').value.trim();const unit=document.getElementById('sv-unit').value.trim();if(!name)return;data.services.push({icon,name,desc,price,unit});renderServices();renderServicesList();['sv-icon','sv-name','sv-desc','sv-price','sv-unit'].forEach(id=>document.getElementById(id).value='');ok('sv-ok');}
+function delService(i){data.services.splice(i,1);renderServices();renderServicesList();}
+function addReview(){const name=document.getElementById('rv-name').value.trim();const stars=parseInt(document.getElementById('rv-stars').value)||5;const text=document.getElementById('rv-text').value.trim();const role=document.getElementById('rv-role').value.trim();const avatar=document.getElementById('rv-avatar').value.trim();if(!name||!text)return;data.reviews.push({name,stars,text,role,avatar});renderReviews();renderReviewsList();['rv-name','rv-text','rv-role','rv-avatar'].forEach(id=>document.getElementById(id).value='');document.getElementById('rv-stars').value=5;ok('rv-ok');}
+function delReview(i){data.reviews.splice(i,1);renderReviews();renderReviewsList();}
+
+function applySiteInfo(){
+  const v=id=>document.getElementById(id).value.trim();
+  if(v('si-title')) document.title=v('si-title');
+  if(v('si-logo')) document.getElementById('nav-logo-el').childNodes[0].textContent=v('si-logo');
+  if(v('si-desc')) document.querySelector('meta[name="description"]').setAttribute('content',v('si-desc'));
+  const c=document.getElementById('si-color').value;
+  if(c){document.documentElement.style.setProperty('--accent',c);document.documentElement.style.setProperty('--accent2',c);}
+  ok('si-ok');
+}
+function applyHero(){
+  const v=id=>document.getElementById(id).value;
+  if(v('h-eyebrow')) document.getElementById('hero-eyebrow-el').textContent=v('h-eyebrow');
+  if(v('h-title')){const parts=v('h-title').split('|');const iw=v('h-italic')||parts[parts.length-1].trim();let html=parts.map((p,i)=>(i<parts.length-1)?p+'<br>':p.replace(iw,`<em>${iw}</em>`)).join('');document.getElementById('hero-title-el').innerHTML=html;}
+  if(v('h-sub')) document.getElementById('hero-sub-el').textContent=v('h-sub');
+  if(v('h-btn1')) document.getElementById('hero-btn1-el').textContent=v('h-btn1');
+  if(v('h-btn1l')) document.getElementById('hero-btn1-el').href=v('h-btn1l');
+  if(v('h-btn2')) document.getElementById('hero-btn2-el').textContent=v('h-btn2');
+  if(v('h-btn2l')) document.getElementById('hero-btn2-el').href=v('h-btn2l');
+  if(v('h-bg').trim()){document.getElementById('hero-bg-el').style.backgroundImage=`url('${v('h-bg').trim()}')`;const p=document.getElementById('h-prev');p.src=v('h-bg').trim();p.style.display='block';}
+  ok('h-ok');
+}
+function applyAbout(){
+  const v=id=>document.getElementById(id).value;
+  if(v('ab-label')) document.getElementById('about-label-el').textContent=v('ab-label');
+  if(v('ab-title')) document.getElementById('about-title-el').textContent=v('ab-title');
+  if(v('ab-p1'))    document.getElementById('about-p1-el').textContent=v('ab-p1');
+  if(v('ab-p2'))    document.getElementById('about-p2-el').textContent=v('ab-p2');
+  if(v('ab-img').trim()){document.getElementById('about-img-el').src=v('ab-img').trim();const p=document.getElementById('ab-prev');p.src=v('ab-img').trim();p.style.display='block';}
+  if(v('ab-s1n')) document.getElementById('stat1-num').textContent=v('ab-s1n');
+  if(v('ab-s1l')) document.getElementById('stat1-lbl').textContent=v('ab-s1l');
+  if(v('ab-s2n')) document.getElementById('stat2-num').textContent=v('ab-s2n');
+  if(v('ab-s2l')) document.getElementById('stat2-lbl').textContent=v('ab-s2l');
+  if(v('ab-s3n')) document.getElementById('stat3-num').textContent=v('ab-s3n');
+  if(v('ab-s3l')) document.getElementById('stat3-lbl').textContent=v('ab-s3l');
+  ok('ab-ok');
+}
+function applyContact(){
+  const v=id=>document.getElementById(id).value.trim();
+  if(v('ct-title')) document.getElementById('contact-title-el').textContent=v('ct-title');
+  if(v('ct-sub'))   document.getElementById('contact-sub-el').textContent=v('ct-sub');
+  if(v('ct-loc'))   document.getElementById('ct-loc-el').textContent=v('ct-loc');
+  if(v('ct-phone')){const el=document.getElementById('ct-phone-el');el.textContent=v('ct-phone');el.href='tel:'+v('ct-phone').replace(/\s/g,'');}
+  if(v('ct-email')){const el=document.getElementById('ct-email-el');el.textContent=v('ct-email');el.href='mailto:'+v('ct-email');}
+  if(v('ct-insta')) document.getElementById('ct-insta-el').textContent=v('ct-insta');
+  if(v('ct-insta-url')) document.getElementById('ct-insta-el').href=v('ct-insta-url');
+  if(v('ct-wa'))    document.getElementById('wa-btn').href='https://wa.me/'+v('ct-wa');
+  ok('ct-ok');
+}
+function applyFooter(){const t=document.getElementById('ft-text').value;if(t) document.getElementById('footer-text-el').textContent=t;ok('ft-ok');}
+function changePw(){
+  const old=document.getElementById('s-old').value;
+  const nw=document.getElementById('s-new').value;
+  const cf=document.getElementById('s-conf').value;
+  const errEl=document.getElementById('s-pw-err');
+  errEl.style.display='none';
+  if(old!==pw||nw!==cf||nw.length<4){errEl.style.display='block';return;}
+  pw=nw;['s-old','s-new','s-conf'].forEach(id=>document.getElementById(id).value='');ok('s-pw-ok');
+}
+function resetSite(){
+  if(!confirm('Reset all content to defaults?'))return;
+  data=JSON.parse(JSON.stringify(defaults));
+  renderGallery();renderTeam();renderServices();renderReviews();
+  renderGalleryList();renderTeamList();renderServicesList();renderReviewsList();
+}
+function ok(id){const el=document.getElementById(id);el.style.display='block';setTimeout(()=>el.style.display='none',3000);}
+
+/* ══════════════════════════
+   ADMIN OPEN/CLOSE/TABS
+══════════════════════════ */
+function openAdmin(){document.getElementById('admin-overlay').classList.add('open');}
+function closeAdmin(){document.getElementById('admin-overlay').classList.remove('open');}
+document.getElementById('admin-open-btn').addEventListener('click',e=>{e.preventDefault();openAdmin();});
+document.getElementById('admin-open-mob').addEventListener('click',e=>{e.preventDefault();document.getElementById('hamburger').classList.remove('open');document.getElementById('mobile-menu').classList.remove('open');openAdmin();});
+document.getElementById('admin-close').addEventListener('click',closeAdmin);
+document.getElementById('admin-overlay').addEventListener('click',e=>{if(e.target===document.getElementById('admin-overlay'))closeAdmin();});
+document.getElementById('pw-input').addEventListener('keydown',e=>{if(e.key==='Enter')doLogin();});
+
+function doLogin(){
+  const val=document.getElementById('pw-input').value;
+  if(val===pw){
+    document.getElementById('admin-login').style.display='none';
+    const main=document.getElementById('admin-main');
+    main.style.display='flex';
+    document.getElementById('admin-header-sub').textContent='Manage your website content.';
+    renderGalleryList();renderTeamList();renderServicesList();renderReviewsList();
+    updateDB();buildThemeGrid();
+  } else {
+    document.getElementById('login-err').style.display='block';
+    document.getElementById('pw-input').value='';
+  }
+}
+
+document.querySelectorAll('.admin-tab').forEach(btn=>{
+  btn.addEventListener('click',()=>{
+    document.querySelectorAll('.admin-tab').forEach(b=>b.classList.remove('active'));
+    document.querySelectorAll('.tab-pane').forEach(p=>p.classList.remove('active'));
+    btn.classList.add('active');
+    document.getElementById('tab-'+btn.dataset.tab).classList.add('active');
+    if(btn.dataset.tab==='theme') buildThemeGrid();
+  });
+});
+
+document.getElementById('h-bg').addEventListener('input',function(){const p=document.getElementById('h-prev');this.value?(p.src=this.value,p.style.display='block'):(p.style.display='none');});
+document.getElementById('ab-img').addEventListener('input',function(){const p=document.getElementById('ab-prev');this.value?(p.src=this.value,p.style.display='block'):(p.style.display='none');});
+
+/* ══════════════════════════
+   HAMBURGER / SCROLL
+══════════════════════════ */
+const ham=document.getElementById('hamburger'),mob=document.getElementById('mobile-menu');
+ham.addEventListener('click',()=>{ham.classList.toggle('open');mob.classList.toggle('open');});
+document.querySelectorAll('.mob-link').forEach(a=>a.addEventListener('click',()=>{ham.classList.remove('open');mob.classList.remove('open');}));
+window.addEventListener('scroll',()=>document.getElementById('main-nav').classList.toggle('scrolled',window.scrollY>40),{passive:true});
+document.querySelectorAll('.ts-btn').forEach(btn=>btn.addEventListener('click',()=>applyTheme(btn.dataset.theme)));
+
+/* ══════════════════════════
+   INTERSECTION OBSERVER
+══════════════════════════ */
+const obs=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');obs.unobserve(e.target);}});},{threshold:0.1});
+document.querySelectorAll('.fade-in').forEach(el=>obs.observe(el));
+
+/* ══════════════════════════
+   CONTACT FORM
+══════════════════════════ */
+document.getElementById('contact-form').addEventListener('submit', function(e) {
+  e.preventDefault();
+  const btn = document.getElementById('form-submit-btn');
+  const s = document.getElementById('form-success');
+  btn.textContent = 'Sending…';
+  btn.disabled = true;
+  emailjs.sendForm('service_anbdmbd', 'template_ebif5wz', this)
+    .then(() => {
+      s.style.display = 'block';
+      s.style.color = 'var(--accent)';
+      s.textContent = '✓ Thank you! We\'ll get back to you within 24 hours.';
+      this.reset();
+      btn.textContent = 'Send Message';
+      btn.disabled = false;
+      setTimeout(() => s.style.display = 'none', 5000);
+    })
+    .catch(() => {
+      s.style.display = 'block';
+      s.style.color = '#e05555';
+      s.textContent = '✗ Something went wrong. Please try again or contact us directly.';
+      btn.textContent = 'Send Message';
+      btn.disabled = false;
+      setTimeout(() => s.style.display = 'none', 5000);
+    });
+});
+
+
+/* ══════════════════════════
+   INIT
+══════════════════════════ */
+
+// Hash-based admin access & brand-name reveal
+function checkHash() {
+  if (window.location.hash === '#admin') {
+    document.body.classList.add('admin-mode');
+    openAdmin();
+  } else {
+    document.body.classList.remove('admin-mode');
+  }
+}
+window.addEventListener('hashchange', checkHash);
+
+// Initial render
+renderGallery();
+renderTeam();
+renderServices();
+renderReviews();
+applyTheme('theme-gold');
+
+// Preloader
+window.addEventListener('load', () => {
+  setTimeout(() => {
+    document.getElementById('preloader').classList.add('hidden');
+    checkHash();
+  }, 600);
+});
+
+</script>
+</body>
+</html>
